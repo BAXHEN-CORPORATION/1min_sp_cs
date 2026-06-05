@@ -136,6 +136,7 @@ export default function Home() {
                 </Button>
                 <Button
                   variant="outline"
+                  render={<a href="#curriculum" />}
                   className="px-8 py-4 h-auto text-base font-semibold"
                 >
                   View Roadmap
@@ -150,7 +151,7 @@ export default function Home() {
                   verified_user
                 </span>
                 <span className="text-sm font-medium">
-                  Joined by 12,000+ aspiring engineers worldwide.
+                  The skills used by the top 12,000 engineers worldwide
                 </span>
               </div>
             </div>
