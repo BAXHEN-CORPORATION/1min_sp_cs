@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Before you Study Computer Science | Your Engineering Foundation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "on-surface": "#0b1c30",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#ffdbca",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#eff4ff",
+                    "secondary-container": "#2170e4",
+                    "surface-container": "#e5eeff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb690",
+                    "on-tertiary-fixed-variant": "#783200",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#341100",
+                    "outline-variant": "#c6c6cd",
+                    "primary-fixed": "#dae2fd",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "inverse-surface": "#213145",
+                    "on-secondary-container": "#fefcff",
+                    "on-secondary-fixed": "#001a42",
+                    "surface": "#f8f9ff",
+                    "surface-bright": "#f8f9ff",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-tint": "#565e74",
+                    "primary-container": "#131b2e",
+                    "primary": "#000000",
+                    "on-tertiary-container": "#d95f00",
+                    "surface-variant": "#d3e4fe",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-surface-variant": "#45464d",
+                    "primary-fixed-dim": "#bec6e0",
+                    "tertiary": "#000000",
+                    "on-background": "#0b1c30",
+                    "tertiary-container": "#341100",
+                    "outline": "#76777d",
+                    "surface-dim": "#cbdbf5",
+                    "on-secondary-fixed-variant": "#004395",
+                    "surface-container-highest": "#d3e4fe",
+                    "background": "#f8f9ff",
+                    "surface-container-high": "#dce9ff",
+                    "secondary": "#0058be",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#d8e2ff",
+                    "inverse-primary": "#bec6e0",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#7c839b",
+                    "brand-accent": "#0f172a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-lg": "64px",
+                    "section-padding": "120px",
+                    "margin-mobile": "16px",
+                    "stack-sm": "8px",
+                    "stack-md": "24px",
+                    "gutter": "24px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "display": ["Plus Jakarta Sans"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "label-caps": ["JetBrains Mono"],
+                    "button": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "button": ["16px", {"lineHeight": "1.0", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 80% 20%, rgba(15, 23, 42, 0.05) 0%, transparent 50%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-brand-accent selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-container-highest/90 backdrop-blur-md border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center h-20 max-w-[1200px] mx-auto px-margin-mobile md:px-gutter">
+<div class="font-display text-headline-md font-extrabold text-on-surface dark:text-inverse-on-surface">Before CS</div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-display text-body-md text-on-surface-variant dark:text-surface-variant font-medium hover:text-brand-accent transition-colors duration-200" href="#problem">The Reality</a>
+<a class="font-display text-body-md text-on-surface-variant dark:text-surface-variant font-medium hover:text-brand-accent transition-colors duration-200" href="#curriculum">Inside</a>
+<a class="font-display text-body-md text-on-surface-variant dark:text-surface-variant font-medium hover:text-brand-accent transition-colors duration-200" href="#audience">For You?</a>
+<a class="font-display text-body-md text-on-surface-variant dark:text-surface-variant font-medium hover:text-brand-accent transition-colors duration-200" href="#pricing">Pricing</a>
+<button class="bg-brand-accent text-white px-stack-md py-3 rounded-lg font-button active:scale-95 transition-transform duration-100 shadow-sm">Enroll Now</button>
+</div>
+<button class="md:hidden p-2 text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="hero-gradient relative overflow-hidden py-section-padding">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-gutter grid md:grid-cols-2 gap-stack-lg items-center">
+<div class="space-y-stack-md animate-fade-in">
+<span class="font-label-caps text-brand-accent tracking-widest bg-brand-accent/10 px-3 py-1 rounded-full">NO FLUFF. NO UNREALISTIC PROMISES.</span>
+<h1 class="font-display text-headline-lg-mobile md:text-display text-on-surface">Before you Study Computer Science</h1>
+<p class="font-body-lg text-on-surface-variant max-w-lg">
+                    The practical roadmap I wish I had before spending years learning the wrong things.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-brand-accent text-white px-8 py-4 rounded-lg font-button text-lg hover:brightness-110 active:scale-95 transition-all shadow-lg">Get the PDF Now</button>
+<button class="border border-outline-variant text-on-surface px-8 py-4 rounded-lg font-button text-lg hover:bg-surface-container-low transition-colors">View Roadmap</button>
+</div>
+<div class="flex items-center gap-stack-sm text-on-surface-variant opacity-75">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+<span class="text-sm font-medium">Joined by 12,000+ aspiring engineers worldwide.</span>
+</div>
+</div>
+<div class="relative flex justify-center">
+<div class="relative w-full max-w-[400px] aspect-[1023/1537] rounded-xl overflow-hidden shadow-2xl transition-transform hover:-rotate-1 duration-500 bg-white">
+<img alt="Before You Study Computer Science Book Cover" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDq4G9iFnRFk2IrOuws_ACOvrOMhIe-J30VKB4X1-L7pE3yP_XBpPi6edQwOr2BEzosdq56BBT5o9Jl-D4-uvN1zzPr6hU2xetWiB-BfhNr-lsFroI8sQREGbMTHLYaq-pZCQNuyeI4Q1u_LN48kl8Xp3rYI4oSG3v0IPXeYc9ivrWVgF8OMYfq6Pwl-tfxi0XI24CHBGB-hTY74gMlALeL694yuJVsaJNsjJVc7s0o-ow_EW3Lmir5u6VZ1vr53aYcgg"/>
+</div>
+<div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-accent/10 blur-[100px] rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- The Problem Section -->
+<!-- Inside Section -->
+<section class="bg-surface py-stack-lg" id="curriculum">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-gutter grid md:grid-cols-2 gap-stack-lg items-center">
+<div class="order-2 md:order-1">
+<img alt="Technical Workspace" class="rounded-2xl shadow-xl border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHV-KuNfuVix8sjbxxHvZCsLCHdBe15j3XyWbOBDU7X4LVnClVfGVWRBDs3XfTTd4i8E3Mjw_Ui5EEIUt6dASTB5AiAOxEStwP1JibLn6QsfrEgxVLnv__85GLbIxvq0tSqNYAVcmVB7Bsnq09Go9UIr8CRTegFSrPoPnGQSqZPRRp8UBd4vZytMO_sY4LARdMQQi-CTqAuPk6IpITRGGPSL69nbijMD6K6NYLLCuQuecFiBpkwRfpzEr_7n9o7cXgs2oXhwULOTTh"/>
+</div>
+<div class="order-1 md:order-2 space-y-stack-md">
+<h2 class="font-display text-headline-lg text-on-surface">Inside You'll Learn</h2>
+<p class="font-body-lg text-on-surface-variant">A clear roadmap from confusion to action, distilled into essential technical and mental frameworks.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent mt-1">check_circle</span>
+<span class="text-on-surface">What computer science actually is (and what developers really do)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent mt-1">check_circle</span>
+<span class="text-on-surface">Why problem-solving matters more than talent</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent mt-1">check_circle</span>
+<span class="text-on-surface">The myths that keep beginners stuck</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent mt-1">check_circle</span>
+<span class="text-on-surface">How to build strong foundations using CS50</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent mt-1">check_circle</span>
+<span class="text-on-surface">How to develop real-world skills through projects</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent mt-1">check_circle</span>
+<span class="text-on-surface">Why practical environments like 42 School accelerate learning</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-accent mt-1">check_circle</span>
+<span class="text-on-surface">The biggest mistakes beginners make—and how to avoid them</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Target Audience Section -->
+<!-- Outcomes Section -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center mb-stack-lg">
+<h2 class="font-display text-headline-lg text-on-surface mb-stack-sm">What You'll Walk Away With</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">A realistic understanding and a concrete action plan.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-stack-md text-center">
+<div class="p-4">
+<div class="text-brand-accent mb-2"><span class="material-symbols-outlined text-4xl">psychology</span></div>
+<p class="font-semibold text-on-surface">How Engineers Think</p>
+</div>
+<div class="p-4">
+<div class="text-brand-accent mb-2"><span class="material-symbols-outlined text-4xl">extension</span></div>
+<p class="font-semibold text-on-surface">Problem Solving Skills</p>
+</div>
+<div class="p-4">
+<div class="text-brand-accent mb-2"><span class="material-symbols-outlined text-4xl">foundation</span></div>
+<p class="font-semibold text-on-surface">Strong CS Foundations</p>
+</div>
+<div class="p-4">
+<div class="text-brand-accent mb-2"><span class="material-symbols-outlined text-4xl">build</span></div>
+<p class="font-semibold text-on-surface">Creating Real Projects</p>
+</div>
+<div class="p-4">
+<div class="text-brand-accent mb-2"><span class="material-symbols-outlined text-4xl">rocket_launch</span></div>
+<p class="font-semibold text-on-surface">Enter CS Intelligently</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing -->
+<section class="py-section-padding bg-surface" id="pricing">
+<div class="max-w-[800px] mx-auto px-margin-mobile text-center">
+<div class="bg-surface-container-low p-stack-lg md:p-16 rounded-3xl border-2 border-brand-accent shadow-xl space-y-stack-md relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-brand-accent text-white font-label-caps py-2 px-6 rounded-bl-xl">BEST VALUE</div>
+<h2 class="font-display text-headline-lg text-on-surface">Ready to start?</h2>
+<p class="text-on-surface-variant text-lg">Gain the advantage today and join 12k+ other engineers.</p>
+<div class="py-stack-md">
+<span class="text-headline-md text-on-surface-variant line-through opacity-50 mr-2">$49</span>
+<span class="text-5xl font-display text-on-surface">$19</span>
+<span class="text-on-surface-variant font-medium">USD / one-time</span>
+</div>
+<div class="space-y-4 max-w-sm mx-auto">
+<button class="w-full bg-brand-accent text-white px-8 py-5 rounded-lg font-button text-xl hover:brightness-125 active:scale-[0.98] transition-all shadow-xl">Get the PDF Now</button>
+<p class="text-sm text-on-surface-variant">Instant delivery to your inbox. PDF format.</p>
+</div>
+<div class="pt-stack-md border-t border-outline-variant flex flex-wrap justify-center gap-stack-md opacity-75">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-brand-accent text-sm">security</span>
+<span class="text-xs font-semibold">SECURE CHECKOUT</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-brand-accent text-sm">history</span>
+<span class="text-xs font-semibold">100% MONEY BACK</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-brand-accent text-sm">devices</span>
+<span class="text-xs font-semibold">ALL DEVICES</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-gutter py-stack-lg flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-display text-headline-md font-bold text-on-surface">Before CS</div>
+<p class="text-on-surface-variant font-body-md text-sm text-center md:text-left">© 2024 Before you Study Computer Science. Empowering future engineers.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-stack-md">
+<a class="text-on-surface-variant font-body-md hover:text-brand-accent underline underline-offset-4 opacity-90 hover:opacity-100 transition-all" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-body-md hover:text-brand-accent underline underline-offset-4 opacity-90 hover:opacity-100 transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-body-md hover:text-brand-accent underline underline-offset-4 opacity-90 hover:opacity-100 transition-all" href="#">Contact Support</a>
+<a class="text-on-surface-variant font-body-md hover:text-brand-accent underline underline-offset-4 opacity-90 hover:opacity-100 transition-all" href="#">Affiliate Program</a>
+</div>
+</div>
+</footer>
+<script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-slide-up');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('opacity-0', 'transition-all', 'duration-1000', 'translate-y-8');
+        observer.observe(section);
+    });
+
+    // Add custom styles for observed elements
+    const style = document.createElement('style');
+    style.textContent = `
+        .opacity-0 { opacity: 0; }
+        .translate-y-8 { transform: translateY(32px); }
+        .animate-slide-up {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    `;
+    document.head.appendChild(style);
+</script>
+</body></html>
