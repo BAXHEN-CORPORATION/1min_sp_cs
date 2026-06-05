@@ -34,7 +34,7 @@ const curriculumItems = [
   "How to build strong foundations using CS50",
   "How to develop real-world skills through projects",
   "Why practical environments like 42 School accelerate learning",
-  "The biggest mistakes beginners make—and how to avoid them",
+  "The biggest mistakes beginners make and how to avoid them",
 ];
 
 const trustBadges = [
@@ -42,7 +42,6 @@ const trustBadges = [
   { icon: "history", label: "100% MONEY BACK" },
   { icon: "devices", label: "ALL DEVICES" },
 ];
-
 
 export default function Home() {
   return (
@@ -85,7 +84,18 @@ export default function Home() {
                 {label}
               </a>
             ))}
-            <Button render={<a href={checkoutLink} target="_blank" rel="noopener noreferrer" />} className="px-6 h-10 text-sm">Enroll Now</Button>
+            <Button
+              render={
+                <a
+                  href={checkoutLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              }
+              className="px-6 h-10 text-sm"
+            >
+              Enroll Now
+            </Button>
           </div>
 
           <button
@@ -130,7 +140,16 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button render={<a href={checkoutLink} target="_blank" rel="noopener noreferrer" />} className="px-8 py-4 h-auto text-base font-semibold">
+                <Button
+                  render={
+                    <a
+                      href={checkoutLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
+                  }
+                  className="px-8 py-4 h-auto text-base font-semibold"
+                >
                   Get the PDF Now
                 </Button>
                 <Button
@@ -273,7 +292,16 @@ export default function Home() {
                 </div>
 
                 <div className="space-y-3 max-w-sm mx-auto">
-                  <Button render={<a href={checkoutLink} target="_blank" rel="noopener noreferrer" />} className="w-full px-8 py-5 h-auto text-lg font-semibold">
+                  <Button
+                    render={
+                      <a
+                        href={checkoutLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      />
+                    }
+                    className="w-full px-8 py-5 h-auto text-lg font-semibold"
+                  >
                     Get the PDF Now
                   </Button>
                   <p className="text-sm text-on-surface-variant">
@@ -312,8 +340,8 @@ export default function Home() {
               Before CS
             </div>
             <p className="text-on-surface-variant font-body-md text-sm text-center md:text-left">
-              © {new Date().getFullYear()} Before you Study Computer Science. Empowering future
-              engineers.
+              © {new Date().getFullYear()} Before you Study Computer Science.
+              Empowering future engineers.
             </p>
           </div>
 
