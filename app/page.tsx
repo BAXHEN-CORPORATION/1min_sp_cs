@@ -73,7 +73,6 @@ export default function Home() {
           <div className="hidden md:flex gap-gutter items-center">
             {(
               [
-                ["#problem", "The Reality"],
                 ["#curriculum", "Inside"],
                 ["#pricing", "Pricing"],
               ] as const
@@ -313,7 +312,7 @@ export default function Home() {
               Before CS
             </div>
             <p className="text-on-surface-variant font-body-md text-sm text-center md:text-left">
-              © 2024 Before you Study Computer Science. Empowering future
+              © {new Date().getFullYear()} Before you Study Computer Science. Empowering future
               engineers.
             </p>
           </div>
