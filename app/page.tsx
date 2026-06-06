@@ -305,7 +305,7 @@ export default function Home() {
                     Get the PDF Now
                   </Button>
                   <p className="text-sm text-on-surface-variant">
-                    Instant delivery to your inbox. PDF format.
+                    Instant access. PDF format.
                   </p>
                 </div>
 
